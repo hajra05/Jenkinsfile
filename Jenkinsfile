@@ -9,10 +9,6 @@ pipeline {
         booleanParam(name: 'executeTests', defaultValue: true, description: 'Run test stage')
     }
 
-    tools {
-        maven 'Maven'   // Make sure name matches Jenkins tools config
-    }
-
     stages {
         stage('Build') {
             steps {
